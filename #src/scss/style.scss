@@ -1,0 +1,73 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+    @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+    }
+    }
+
+@mixin icomoon($content_icon, $color_icon) {
+    content: $content_icon;
+    font-family: 'icomoon';
+    position: absolute;
+    color: $color_icon;
+}
+
+$color1: #fff;
+$color2: #ffc222;
+$color3: #cbcacb;
+$fz1: 14px;
+$fz2: 30px;
+$lh1: 18px;
+$ff: 'Roboto', sans-serif;
+$fw1: 500;
+
+@import "fontawesome";
+@import "fonts";
+@import "null";
+@import "slick";
+@import "jquery.formstyler";
+@import "popup";
+
+.default__btn{
+    color: $color1;
+    line-height: $lh1 + 6;
+    font-weight: $fw1;
+    padding: 8px 30px 8px 24px;
+    border: 1px solid $color2;
+    border-right-width: 20px;
+    position: relative;
+    &:after {
+        @include icomoon("\f105", $color1);
+        top: 50%;
+        transform: translateY(-50%);
+        right: -12px;   
+    }
+}
+
+
+body {
+    font-family: 'PT Serif', sans-serif;
+    font-size: $fz1;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+@import "header";
+@import "slider";
+@import "services";
+@import "about";
+@import "form";
+@import "adventages";
+@import "news";
+@import "footer";
+@import "media";
+
+
+
+

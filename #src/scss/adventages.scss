@@ -1,0 +1,49 @@
+.advantages {
+    padding: 55px 0px 40px;
+    background-image: url('../img/bgDesert.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 285px;
+    background-size: cover;
+    .advantages__inner {
+        text-align: center;
+        color: $color1;
+        display: flex;
+        justify-content: space-between;
+        .advantages__item {
+            max-width: 360px;
+            padding: 0px 20px;
+            .advantages__title {
+                font-size: 18px;
+                font-weight: $fw1;
+                line-height: $lh1 + 6;
+                font-family: 'Roboto', sans-serif;
+                padding: 60px 0px 15px;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid $color2;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                }
+                &:after {
+                    @include icomoon('\f00c', $color1);
+                    font-size: 14px;
+                    top: 9px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            .advantages__text {
+                line-height: $lh1 + 6;
+                letter-spacing: 0.1px;
+                color: #d2d2d3;
+            }
+        }
+    }
+}

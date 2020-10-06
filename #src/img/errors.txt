@@ -1,0 +1,2 @@
+[2020-09-18 13:01:40] layer "  +38 (096) 309 21 45            layout585@gmail.com         ": Unsupported extension: com
+[2020-09-18 12:10:46] layer "     +38 (096) 309 21 45             layout585@gmail.com    ": Expected end of input but "\uF041" found.
