@@ -7,3 +7,4 @@ Used such technologies:
 4) Icons fontawesome took from site "Icomoon";
 5) For slider used slick carousel;
 6) Added a google map to the site.
+- IMPORTANT!!! // Anyone who has problems with the WEBPCSS plugin needs to install converter with the command - npm install webp-converter@2.2.3 --save-exact
